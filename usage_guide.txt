@@ -1,0 +1,29 @@
+SuperPy - Inventory Management System
+
+Commands:
+
+  buy             Buy a product
+  sell            Sell a product
+  report          Generate reports
+
+
+Examples:
+
+  Buy a product:
+    python super.py buy --product-name banana --price 2.8 --expiration-date 2023-06-30 --quantity 1
+
+  Sell a product:
+    python super.py sell --product-name orange --price 2
+
+  Generate inventory report:
+    python super.py report inventory --now
+
+  Generate revenue report:
+    python super.py report revenue --start-date 2023-05 --end-date 2023-06
+
+  Generate profit report:
+    python super.py report profit --start-date 2023-05 --end-date 2023-06
+
+  Visualize revenue statistics:
+    python super.py report revenue --start-date 2023-05 --end-date 2023-06 --visualize
+

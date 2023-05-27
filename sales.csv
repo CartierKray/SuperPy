@@ -1,0 +1,5 @@
+id,product_name,bought_id,sell_date,sell_price
+1,orange,6,2023-05-27,5.0
+2,passionfruit,10,2023-05-27,12.0
+3,mandarin,7,2023-05-27,15.0
+4,tomato,1,2023-05-27,5.0
