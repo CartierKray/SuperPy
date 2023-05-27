@@ -276,9 +276,6 @@ def create_usage_guide():
       Generate profit report:
         python super.py report profit --start-date 2022-01 --end-date 2022-06
 
-      Export inventory report to CSV:
-        python super.py report inventory --start-date 2022-01 --end-date 2022-06 --export-file inventory_report.csv
-
       Visualize revenue statistics:
         python super.py report revenue --start-date 2022-01 --end-date 2022-06 --visualize
 
