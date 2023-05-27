@@ -261,23 +261,23 @@ def create_usage_guide():
 
     Examples:
 
-      Buy a product:
-        python super.py buy --product-name orange --price 0.8 --expiration-date 2020-01-01
+  Buy a product:
+    python super.py buy --product-name banana --price 2.8 --expiration-date 2023-06-30 --quantity 1
 
-      Sell a product:
-        python super.py sell --product-name orange --price 2
+  Sell a product:
+    python super.py sell --product-name orange --price 2
 
-      Generate inventory report:
-        python super.py report inventory --now
+  Generate inventory report:
+    python super.py report inventory --now
 
-      Generate revenue report:
-        python super.py report revenue --start-date 2022-01 --end-date 2022-06
+  Generate revenue report:
+    python super.py report revenue --start-date 2023-05 --end-date 2023-06
 
-      Generate profit report:
-        python super.py report profit --start-date 2022-01 --end-date 2022-06
+  Generate profit report:
+    python super.py report profit --start-date 2023-05 --end-date 2023-06
 
-      Visualize revenue statistics:
-        python super.py report revenue --start-date 2022-01 --end-date 2022-06 --visualize
+  Visualize revenue statistics:
+    python super.py report revenue --start-date 2023-05 --end-date 2023-06 --visualize
 
     """
     with open(USAGE_GUIDE_FILE, "w") as file:
