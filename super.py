@@ -253,13 +253,11 @@ def create_usage_guide():
     usage_guide = """
     SuperPy - Inventory Management System
 
-
     Commands:
 
       buy             Buy a product
       sell            Sell a product
       report          Generate reports
-
 
     Examples:
 
