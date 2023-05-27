@@ -253,14 +253,16 @@ def create_usage_guide():
     usage_guide = """
     SuperPy - Inventory Management System
 
-    Usage Guide:
 
     Commands:
+
       buy             Buy a product
       sell            Sell a product
       report          Generate reports
 
+
     Examples:
+
       Buy a product:
         python super.py buy --product-name orange --price 0.8 --expiration-date 2020-01-01
 
