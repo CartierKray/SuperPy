@@ -1,10 +1,24 @@
 SuperPy - Inventory Management System
 
+
+Explanation: 
+
+The code provided in super.py is a Python written script for an inventory management system called "SuperPy". visualizing revenue statistics, and advancing or reversing the current date.
+To work with this you need to use the terminal of your script editor and use the commands below ( make sure you are in the right directory > SuperPy ).  
+Please note that this code assumes the presence of certain files such as "inventory.csv", "sales.csv", "date.txt", and "usage_guide.txt". 
+The script uses these files to store inventory and sales data, the current date, and the usage guide. 
+Ensure that these files exist and are accessible when running the script.
+
+
+
+
 Commands:
 
-  buy             Buy a product
-  sell            Sell a product
-  report          Generate reports
+  buy:             Buy a product
+  sell:            Sell a product
+  report:          Generate reports
+
+
 
 
 Examples:
