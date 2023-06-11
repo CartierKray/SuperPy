@@ -5,6 +5,7 @@ import os
 import matplotlib.pyplot as plt
 from rich.console import Console
 from rich.table import Table
+import sys
 
 
 INVENTORY_FILE = "inventory.csv"
@@ -42,12 +43,25 @@ def set_current_date(date):
 
 
 def advance_time(days):
-    current_date = get_current_date()
-    new_date = current_date + datetime.timedelta(days=days)
-    set_current_date(new_date)
-    print(
-        f"Time advanced by {days} days. Current date is {new_date.strftime('%Y-%m-%d')}."
-    )
+    try:
+        with open("date.txt", "r") as file:
+            current_date = datetime.datetime.strptime(file.read().strip(), "%Y-%m-%d")
+
+        new_date = current_date + datetime.timedelta(days=days)
+
+        with open("date.txt", "w") as file:
+            file.write(new_date.strftime("%Y-%m-%d"))
+
+        print(f"Date changed to: {new_date.strftime('%Y-%m-%d')}")
+
+    except FileNotFoundError:
+        print("date.txt file not found.")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) == 3 and sys.argv[1] == "advance_time":
+        days = int(sys.argv[2])
+        advance_time(days)
 
 
 def buy_product(product_name, price, expiration_date, quantity):
@@ -362,6 +376,16 @@ def main():
         "--export-file", required=True, help="File to export the report"
     )
 
+    # Advance Time Command
+    advance_time_parser = subparsers.add_parser(
+        "advance_time", help="Advance or reverse the current date"
+    )
+    advance_time_parser.add_argument(
+        "days",
+        type=int,
+        help="Number of days to advance (positive) or reverse (negative) the current date",
+    )
+
     args = parser.parse_args()
 
     if args.command == "buy":
@@ -393,6 +417,10 @@ def main():
             start_date = datetime.datetime.strptime(args.start_date, "%Y-%m").date()
             end_date = datetime.datetime.strptime(args.end_date, "%Y-%m").date()
             generate_profit_report(start_date, end_date)
+
+        elif args.command == "advance_time":
+            days = args.days
+            advance_time(days)
 
         else:
             print("ERROR: Invalid report type.")

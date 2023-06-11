@@ -5,3 +5,5 @@ id,product_name,bought_id,sell_date,sell_price
 4,tomato,1,2023-05-27,5.0
 5,Dragonfruit,10,2023-06-13,11.0
 6,pear,11,2023-06-13,100.0
+7,orange,11,2023-06-11,90.0
+8,carambola,12,2023-06-11,88.0
