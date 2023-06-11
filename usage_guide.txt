@@ -28,19 +28,19 @@ Examples:
 
 
   Generate revenue report:
-    Command: python super.py report revenue --start-date 2023-05 --end-date 2023-06
+    Command: python super.py report revenue --start-date 2023-05 --end-date 2023-07
     Description: This command generates a report of the revenue earned within a specific date range. You need to specify the start and end dates. The report includes information about the total revenue generated and the revenue for each day within the specified range.
 
 
 
   Generate profit report:
-    Command: python super.py report profit --start-date 2023-05 --end-date 2023-06
+    Command: python super.py report profit --start-date 2023-05 --end-date 2023-07
     Description: This command generates a report of the profit earned within a specific date range. You need to specify the start and end dates. The report includes information about the total profit generated and the profit for each day within the specified range.
 
 
 
   Visualize revenue statistics:
-    Command: python super.py report revenue --start-date 2023-05 --end-date 2023-06 --visualize
+    Command: python super.py report revenue --start-date 2023-05 --end-date 2023-07 --visualize
     Description: This command generates a report of the revenue earned within a specific date range and visualizes it. You need to specify the start and end dates. The report includes information about the total revenue generated and a visual representation of revenue trends over time.
 
   
