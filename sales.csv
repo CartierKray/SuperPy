@@ -7,3 +7,4 @@ id,product_name,bought_id,sell_date,sell_price
 6,pear,11,2023-06-13,100.0
 7,orange,11,2023-06-11,90.0
 8,carambola,12,2023-06-11,88.0
+9,orange,11,2023-06-11,70.0
