@@ -10,20 +10,43 @@ Commands:
 Examples:
 
   Buy a product:
-    python super.py buy --product-name banana --price 2.8 --expiration-date 2023-06-30 --quantity 1
+    Command: python super.py buy --product-name banana --price 2.8 --expiration-date 2023-06-30 --quantity 1
+    Description: This command allows you to add a new product to your inventory by specifying the product name, price, expiration date, and quantity. The product will be purchased and added to your inventory for future sales.
+
+
 
   Sell a product:
-    python super.py sell --product-name orange --price 2
+    Command: python super.py sell --product-name orange --price 2
+    Description: This command allows you to sell a product from your inventory. You need to specify the product name and the selling price. The quantity of the sold product will be deducted from your inventory.
+
+
 
   Generate inventory report:
-    python super.py report inventory --now
+    Command: python super.py report inventory --now
+    Description: This command generates a report of your current inventory. It provides information about the available products, their quantities, prices, and expiration dates.
+
+
 
   Generate revenue report:
-    python super.py report revenue --start-date 2023-05 --end-date 2023-06
+    Command: python super.py report revenue --start-date 2023-05 --end-date 2023-06
+    Description: This command generates a report of the revenue earned within a specific date range. You need to specify the start and end dates. The report includes information about the total revenue generated and the revenue for each day within the specified range.
+
+
 
   Generate profit report:
-    python super.py report profit --start-date 2023-05 --end-date 2023-06
+    Command: python super.py report profit --start-date 2023-05 --end-date 2023-06
+    Description: This command generates a report of the profit earned within a specific date range. You need to specify the start and end dates. The report includes information about the total profit generated and the profit for each day within the specified range.
+
+
 
   Visualize revenue statistics:
-    python super.py report revenue --start-date 2023-05 --end-date 2023-06 --visualize
+    Command: python super.py report revenue --start-date 2023-05 --end-date 2023-06 --visualize
+    Description: This command generates a report of the revenue earned within a specific date range and visualizes it. You need to specify the start and end dates. The report includes information about the total revenue generated and a visual representation of revenue trends over time.
 
+  
+
+  Change the time :
+   Command_1: python super.py advance_time 2
+   Command_2: python super.py advance_time -2
+   Description: This command allows you to manipulate the time by adding or subtracting a specified number of days from the current date. It updates the date used in the inventory and sales reports accordingly. Command_1 advances the date where as Command_2 reverses the date. When activated the command in the terminal you will see the date in date.txt change accordingly.
+   
