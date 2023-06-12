@@ -15,9 +15,11 @@ def create_usage_guide():
 
     Commands:
 
-      buy             Buy a product
-      sell            Sell a product
-      report          Generate reports
+      buy                Buy a product
+      sell               Sell a product
+      report             Generate reports
+      export             Export data to CSV
+      advance_time       Advance or reverse the current date
 
     Examples:
 
@@ -44,7 +46,7 @@ def create_usage_guide():
         python super.py advance_time -2 ( changes the date with -2 days back )
 
     
-    For a more clear explanation you can visit the user_guide.txt file for specifications of the command lines and their purposes.
+    For a more detailed explanation you can visit the user_guide.txt file for specifications of the command lines and their purposes.
 
     """
     with open(USAGE_GUIDE_FILE, "w") as file:
