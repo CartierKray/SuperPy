@@ -12,3 +12,4 @@ id,product_name,bought_id,sell_date,sell_price
 11,avocado,11,2023-06-12,80.0
 12,strawberry,11,2023-06-12,60.0
 13,lemon,11,2023-06-15,75.0
+14,lemon,11,2023-06-13,60.0

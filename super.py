@@ -145,11 +145,9 @@ def main():
 
     if args.command == "buy":
         buy_product(args.product_name, args.price, args.expiration_date, args.quantity)
-        print("Product bought successfully.")
 
     elif args.command == "sell":
         sell_product(args.product_name, args.price)
-        print("Product sold successfully.")
 
     elif args.command == "report":
         if args.report_type == "inventory":
@@ -187,6 +185,10 @@ def main():
 
         print(f"Report exported to {args.export_file} successfully.")
 
+    elif args.command == "advance_time":
+        days = args.days
+        advance_time(days)
+
     else:
         parser.print_help()
 
@@ -207,9 +209,5 @@ if __name__ == "__main__":
 
     if not os.path.exists(USAGE_GUIDE_FILE):
         create_usage_guide()
-
-    if len(sys.argv) == 3 and sys.argv[1] == "advance_time":
-        days = int(sys.argv[2])
-        advance_time(days)
 
     main()
