@@ -7,6 +7,7 @@ from rich.console import Console
 from rich.table import Table
 import sys
 
+
 INVENTORY_FILE = "inventory.csv"
 SALES_FILE = "sales.csv"
 DATE_FILE = "date.txt"
