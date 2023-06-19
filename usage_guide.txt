@@ -11,7 +11,6 @@ Ensure that these files exist and are accessible when running the script.
 
 
 
-
 Commands:
 
   buy:              Buy a product
@@ -19,7 +18,6 @@ Commands:
   report:           Generate reports
   export:           Export data to CSV
   advance_time:     Advance or reverse the current date
-
 
 
 
